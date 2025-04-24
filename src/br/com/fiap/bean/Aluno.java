@@ -1,14 +1,14 @@
 package br.com.fiap.bean;
 
 import java.time.LocalDate;
-// Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:
+// Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:563654
 public class Aluno {
     //Atributos
     private int registroMatricula;
     private String nomeCompleto;
     private int anoDeNascimento;
 
-    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:
+    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:563654
     //Construtores
     public Aluno(int registroMatricula, String nomeCompleto, int anoDeNascimento) {
         this.registroMatricula = registroMatricula;
@@ -16,16 +16,17 @@ public class Aluno {
         this.anoDeNascimento = anoDeNascimento;
     }
 
-    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:
+    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:563654
     public Aluno(){
     }
 
-    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:
+    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:563654
     //Getters/Setters
     public int getRegistroMatricula() {
         return registroMatricula;
     }
-    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:
+
+    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:563654
     public void setRegistroMatricula(int registroMatricula) {
         try {
               if (registroMatricula >= 80000 && registroMatricula <= 599999){
@@ -38,22 +39,22 @@ public class Aluno {
         }
     }
 
-    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:
+    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:563654
     public String getNomeCompleto() {
         return nomeCompleto;
     }
 
-    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:
+    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:563654
     public void setNomeCompleto(String nomeCompleto) {
         this.nomeCompleto = nomeCompleto;
     }
 
-    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:
+    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:563654
     public int getAnoDeNascimento() {
         return anoDeNascimento;
     }
 
-    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:
+    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:563654
     public void setAnoDeNascimento(int anoDeNascimento) {
         LocalDate dataAtual = LocalDate.now();
         try {
@@ -67,7 +68,7 @@ public class Aluno {
         }
     }
 
-    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:
+    // Pietro Paranhos Wilhelm RM:561378, Arthur Cazes RM:561829, Arthur Silvera RM: 562310, Diogo Olivera RM:563654
     //Metodos da classe
     public int calcularIdade(int anoAtual){
         return anoAtual - anoDeNascimento;
